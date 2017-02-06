@@ -1,3 +1,23 @@
 <h1>
   {{title}}
 </h1>
+
+<form>
+  <h2>Airfare</h2>
+  <input id="airfare-total" type="number" step=".01" name="airfare" [(ngModel)]="model.airfare.total">
+
+
+  <h2>Conference Registration</h2>
+  <input id="registration-total" type="number" step=".01" name="registration" [(ngModel)]="model.registration.total">
+
+
+  <h2>Train/Bus/Taxi/Car service</h2>
+  <input id="car-total" type="number" step=".01" name="car" [(ngModel)]="model.car.total">
+
+  <h2>Hotel</h2>
+  <input id="hotel-total" type="number" step=".01" name="hotel" [(ngModel)]="model.hotel.total">
+
+  <per-diem [model]="model.per_diem"></per-diem>
+
+  <h2>Total</h2> <input id="total" type="number" name="total" [(ngModel)]="model.total">
+</form>
