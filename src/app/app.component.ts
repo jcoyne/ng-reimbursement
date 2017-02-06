@@ -34,7 +34,7 @@ export class Reimbursement {
 })
 
 export class AppComponent {
-  title = 'My first component';
+  title = 'Reimbursement calculator';
   model = new Reimbursement();
 
 }
