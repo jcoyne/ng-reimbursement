@@ -21,6 +21,6 @@ export class Reimbursement {
 
   get total() {
     return this.airfare.total + this.registration.total + this.car.total +
-      this.hotel.total + this.per_diem.total;
+      this.wifi.total + this.hotel.total + this.per_diem.total;
   }
 }
