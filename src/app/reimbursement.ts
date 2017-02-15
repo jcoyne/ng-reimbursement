@@ -25,4 +25,8 @@ export class Reimbursement {
       .add(this.car.total).add(this.wifi.total)
       .add(this.hotel.total).add(this.per_diem.total).value();
   }
+  
+  get display(): String {
+    return numeral(this.total).format('$0,0.00')
+  }
 }
