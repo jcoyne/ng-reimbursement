@@ -1,3 +1,8 @@
 input[type="number"] {
   text-align: right
 }
+
+legend {
+  font-size: 1rem;
+  margin-bottom: .25rem;
+}
