@@ -1,25 +1,59 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <div class="row">
+      <h1>
+        {{title}}
+      </h1>
 
-<form>
-  <h2>Airfare</h2>
-  <input id="airfare-total" type="number" step=".01" name="airfare" [(ngModel)]="model.airfare.total">
+      <form>
+        <fieldset>
+          <legend>Airfare</legend>
+          <p>
+            <input id="airfare-total" type="number" step=".01" name="airfare" [(ngModel)]="model.airfare.total">
+          </p>
+        </fieldset>
 
-  <h2>Conference Registration</h2>
-  <input id="registration-total" type="number" step=".01" name="registration" [(ngModel)]="model.registration.total">
+        <fieldset>
+          <legend>Conference Registration</legend>
+          <p>
+            <input id="registration-total" type="number" step=".01" name="registration" [(ngModel)]="model.registration.total">
+          </p>
+        </fieldset>
 
-  <h2>Wi-Fi</h2>
-  <multi-line-item [model]="model.wifi"></multi-line-item>
 
+        <fieldset>
+          <legend>Wi-fi</legend>
+          <p>
+            <multi-line-item [model]="model.wifi"></multi-line-item>
+          </p>
+        </fieldset>
 
-  <h2>Train/Bus/Taxi/Car service</h2>
-  <multi-line-item [model]="model.car"></multi-line-item>
+        <fieldset>
+          <legend>Train/Bus/Taxi/Car service</legend>
+          <p>
+            <multi-line-item [model]="model.car"></multi-line-item>
+          </p>
+        </fieldset>
 
-  <h2>Hotel</h2>
-  <input id="hotel-total" type="number" step=".01" name="hotel" [(ngModel)]="model.hotel.total">
+        <fieldset>
+          <legend>Hotel</legend>
+          <p>
+            <input id="hotel-total" type="number" step=".01" name="hotel" [(ngModel)]="model.hotel.total">
+          </p>
+        </fieldset>
 
-  <per-diem [model]="model.per_diem"></per-diem>
+        <fieldset>
+          <legend>Per Diem</legend>
+          <p>
+            <per-diem [model]="model.per_diem"></per-diem>
+          </p>
+        </fieldset>
 
-  <h2>Total</h2> <input id="total" type="number" step=".01" name="total" [(ngModel)]="model.total">
-</form>
+        <fieldset>
+          <legend>Total</legend>
+          <p>
+            <input id="total" type="number" step=".01" name="total" [(ngModel)]="model.total">
+          </p>
+        </fieldset>
+      </form>
+  </div>
+</div>

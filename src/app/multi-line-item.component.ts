@@ -4,6 +4,7 @@ import { MultiLineItem } from './multi-line-item';
 @Component({
   selector: 'multi-line-item',
   templateUrl: './multi-line-item.component.html',
+  styleUrls: ['./multi-line-item.component.css']
 })
 export class MultiLineItemComponent {
   total = 0
