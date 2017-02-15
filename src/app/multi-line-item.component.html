@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let line of model.lines">
+     <input type="number" step=".01" name="car" [(ngModel)]="line.total">
+     <button (click)="removeLine(line)">Remove Line</button>
+
+   </li>
+</ul>
+<button (click)="addLine()">Add Line</button>

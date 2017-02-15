@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { PerDiemComponent } from './per-diem.component';
+import { MultiLineItemComponent } from './multi-line-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PerDiemComponent
+    PerDiemComponent,
+    MultiLineItemComponent
   ],
   imports: [
     BrowserModule,

@@ -12,12 +12,12 @@
 
 
   <h2>Train/Bus/Taxi/Car service</h2>
-  <input id="car-total" type="number" step=".01" name="car" [(ngModel)]="model.car.total">
+  <multi-line-item [model]="model.car"></multi-line-item>
 
   <h2>Hotel</h2>
   <input id="hotel-total" type="number" step=".01" name="hotel" [(ngModel)]="model.hotel.total">
 
   <per-diem [model]="model.per_diem"></per-diem>
 
-  <h2>Total</h2> <input id="total" type="number" name="total" [(ngModel)]="model.total">
+  <h2>Total</h2> <input id="total" type="number" step=".01" name="total" [(ngModel)]="model.total">
 </form>
