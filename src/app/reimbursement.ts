@@ -2,6 +2,7 @@
 import { LineItem } from './line-item';
 import { MultiLineItem } from './multi-line-item';
 import { PerDiem } from './per-diem';
+import * as numeral from 'numeral';
 
 export class Reimbursement {
   public airfare: LineItem;
@@ -20,7 +21,8 @@ export class Reimbursement {
   }
 
   get total() {
-    return this.airfare.total + this.registration.total + this.car.total +
-      this.wifi.total + this.hotel.total + this.per_diem.total;
+    return numeral(this.airfare.total).add(this.registration.total)
+      .add(this.car.total).add(this.wifi.total)
+      .add(this.hotel.total).add(this.per_diem.total).value();
   }
 }
