@@ -6,6 +6,10 @@
 
       <form>
         <fieldset>
+          <my-date-range-picker [options]="rangePickerOptions"
+                   (dateRangeChanged)="onDateRangeChanged($event)"></my-date-range-picker>
+        </fieldset>
+        <fieldset>
           <legend>Airfare</legend>
           <p>
             <input id="airfare-total" type="number" step=".01" name="airfare" [(ngModel)]="model.airfare.total">
