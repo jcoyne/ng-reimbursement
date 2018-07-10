@@ -11,7 +11,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build. Add `--base-href /reimbursement/` to set the base path.
+
+```
+ng build --prod --base-href /reimbursement/
+```
 
 ## Running unit tests
 
