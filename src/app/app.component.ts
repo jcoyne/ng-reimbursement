@@ -13,7 +13,7 @@ export class AppComponent {
   model = new Reimbursement();
   dateRange : IMyDateRangeModel;
 
-  private rangePickerOptions: IMyOptions = {
+  rangePickerOptions: IMyOptions = {
       // other options...
       dateFormat: 'mm/dd/yyyy',
   };
