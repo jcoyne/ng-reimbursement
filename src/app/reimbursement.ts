@@ -9,14 +9,14 @@ export class Reimbursement {
   public registration: LineItem;
   public car: MultiLineItem;
   public wifi: MultiLineItem;
-  public hotel: LineItem;
+  public hotel: MultiLineItem;
   public per_diem: PerDiem;
   constructor () {
     this.airfare = new LineItem(0);
     this.registration = new LineItem(0);
     this.car = new MultiLineItem();
     this.wifi = new MultiLineItem();
-    this.hotel = new LineItem(0);
+    this.hotel = new MultiLineItem();
     this.per_diem = new PerDiem(0, 64);
   }
 

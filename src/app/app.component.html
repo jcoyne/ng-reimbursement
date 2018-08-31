@@ -39,9 +39,9 @@
         </fieldset>
 
         <fieldset>
-          <legend>Hotel</legend>
+          <legend>Hotel  ({{model.hotel.display}})</legend>
           <p>
-            <input id="hotel-total" type="number" step=".01" name="hotel" [(ngModel)]="model.hotel.total">
+            <multi-line-item [model]="model.hotel"></multi-line-item>
           </p>
         </fieldset>
 
