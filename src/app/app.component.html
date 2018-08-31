@@ -6,6 +6,21 @@
 
       <form>
         <fieldset>
+          <legend>Who</legend>
+          <p>
+            <input [(ngModel)]="model.who" name="who">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Where</legend>
+          <p>
+            <input [(ngModel)]="model.where" name="where">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>When</legend>
           <my-date-range-picker [options]="rangePickerOptions"
                    (dateRangeChanged)="onDateRangeChanged($event)"></my-date-range-picker>
         </fieldset>
@@ -58,6 +73,8 @@
             {{model.display}}
           </p>
         </fieldset>
+
+        <report [model]="model.report"></report>
       </form>
   </div>
 </div>

@@ -23,5 +23,7 @@ export class AppComponent {
       let millisecondsPerDay = 24 * 60 * 60 * 1000
       let days = (event.endJsDate.valueOf() - event.beginJsDate.valueOf()) / millisecondsPerDay + 1
       this.model.per_diem.days = days
+      this.model.firstDay = event.beginJsDate
+      this.model.lastDay = event.endJsDate
   }
 }

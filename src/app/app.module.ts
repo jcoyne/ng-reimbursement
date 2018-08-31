@@ -7,12 +7,14 @@ import { MyDateRangePickerModule } from 'mydaterangepicker';
 import { AppComponent } from './app.component';
 import { PerDiemComponent } from './per-diem.component';
 import { MultiLineItemComponent } from './multi-line-item.component';
+import { ReportComponent } from './report.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PerDiemComponent,
-    MultiLineItemComponent
+    MultiLineItemComponent,
+    ReportComponent
   ],
   imports: [
     BrowserModule,
