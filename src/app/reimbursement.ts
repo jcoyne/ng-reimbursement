@@ -25,7 +25,7 @@ export class Reimbursement {
     this.car = new MultiLineItem();
     this.wifi = new MultiLineItem();
     this.hotel = new MultiLineItem();
-    this.per_diem = new PerDiem(0, 64);
+    this.per_diem = new PerDiem(0, 66);
     this.report = new Report(this)
   }
 
